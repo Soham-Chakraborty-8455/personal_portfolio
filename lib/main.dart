@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 void main(){
@@ -48,75 +50,90 @@ class MyApp extends StatelessWidget {
                     fontSize: 20.00,
                   ),
                 ),
-                const SizedBox(
+
+                 SizedBox(
                   height: 20.00,
+                  width: 300.00,
+                  child: Divider(
+                    color: Colors.teal[100],
+
+                  ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
                   margin: const EdgeInsets.symmetric(vertical:0.00, horizontal:70.00),
-                  padding: const EdgeInsets.all(5.00),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children:  <Widget>[
                       Icon(
                           Icons.call,
                         color: Colors.teal[800],
-                        size: 28.00,
                       ),
                       const SizedBox(
-                        width: 20.00,
+                        width: 15.00,
                       ),
                       Text(
-                       '+91  8617257358',
-                       style: TextStyle(
-                         fontFamily: 'SourceSansProBold',
-                         fontSize: 25.00,
-                         color: Colors.teal[800],
-                       ),
+                        "+91 8617257358",
+                        style: TextStyle(
+                          fontFamily: 'SourceSansProBold',
+                          fontSize: 25.00,
+                          color: Colors.teal[800],
+                        ),
                       ),
                     ],
                   ),
                 ),
+
+
                 const SizedBox(
                   height: 20.00,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Container(
-                      padding: const EdgeInsets.all(5.00),
-                      color: Colors.white,
-                      child: Icon(
-                        Icons.email,
-                        color: Colors.teal[800],
-                        size: 35.00,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 25.00,
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(5.00),
-                      color: Colors.white,
-                      child:  Image(
-                        image: const NetworkImage('https://cdn-icons-png.flaticon.com/512/1077/1077094.png?w=360'),
-                        color: Colors.teal[800],
-                        height: 35.00,
-                        width: 35.00,
+                    Card(
 
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Icon(
+                          Icons.email,
+                          color: Colors.teal[800],
+                          size: 35.00,
+                        ),
                       ),
                     ),
                     const SizedBox(
                       width: 25.00,
                     ),
-                    Container(
-                      padding: const EdgeInsets.all(5.00),
+                    Card(
+
                       color: Colors.white,
-                      child:   Image(
-                        image: const NetworkImage('https://cdn-icons-png.flaticon.com/512/25/25231.png'),
-                        color: Colors.teal[800],
-                        height: 35.00,
-                        width: 35.00,
+                      child:  Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Image(
+                          image: const NetworkImage('https://cdn-icons-png.flaticon.com/512/1077/1077094.png?w=360'),
+                          color: Colors.teal[800],
+                          height: 35.00,
+                          width: 35.00,
+
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 25.00,
+                    ),
+                    Card(
+
+                      color: Colors.white,
+                      child:   Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Image(
+                          image: const NetworkImage('https://cdn-icons-png.flaticon.com/512/25/25231.png'),
+                          color: Colors.teal[800],
+                          height: 35.00,
+                          width: 35.00,
+                        ),
                       ),
                     ),
                   ],
@@ -128,3 +145,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
